@@ -1,0 +1,1 @@
+initSidebarItems({"trait":[["OptionResultExt","Extension trait for nested `Option` and `Result` types."]]});
