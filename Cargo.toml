@@ -1,0 +1,12 @@
+[package]
+name = "result"
+version = "0.0.1"
+authors = ["arcnmx"]
+
+description = "Helpers for dealing with Result types"
+keywords = ["option", "result", "invert"]
+
+documentation = "http://arcnmx.github.io/result-rs/result"
+repository = "https://github.com/arcnmx/result-rs"
+readme = "README.md"
+license = "MIT"
