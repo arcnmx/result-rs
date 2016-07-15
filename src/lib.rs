@@ -34,3 +34,22 @@ impl<T, E> OptionResultExt for Result<Option<T>, E> {
         }
     }
 }
+
+#[cfg(test)]
+mod tests {
+    use super::*;
+
+    #[test]
+    fn test_option_result() {
+        use std::iter;
+        let mut iter = iter::once(Err::<(), _>(0));
+
+        let err = iter.next();
+        assert!(err.invert().is_err());
+        assert_eq!(err.invert().invert(), err);
+
+        let none = iter.next();
+        assert_eq!(none.invert(), Ok(None));
+        assert_eq!(none.invert().invert(), none);
+    }
+}
