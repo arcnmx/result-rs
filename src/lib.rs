@@ -3,6 +3,9 @@
 
 //! Helpers for dealing with nested `Result` and `Option` types. Convert a
 //! `Option<Result<T, E>>` to `Result<Option<T>, E>` and vice versa.
+//!
+//! `use result::prelude::*` is recommended in order to import the extension
+//! traits into scope.
 
 /// Module that contains all extension traits useful for working with nested
 /// `Option` and `Result` types.
