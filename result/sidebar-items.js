@@ -1,1 +1,1 @@
-initSidebarItems({"trait":[["OptionResultExt","Extension trait for nested `Option` and `Result` types."]]});
+initSidebarItems({"mod":[["prelude","Module that contains all extension traits useful for working with nested `Option` and `Result` types."]],"trait":[["ResultIteratorExt","Extension trait for iterators that produce `Result` types"],["ResultOptionExt","Extension trait for nested `Option` and `Result` types."]]});

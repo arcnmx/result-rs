@@ -9,6 +9,7 @@
 
     <title>result - Rust</title>
 
+    <link rel="stylesheet" type="text/css" href="../normalize.css">
     <link rel="stylesheet" type="text/css" href="../rustdoc.css">
     <link rel="stylesheet" type="text/css" href="../main.css">
     
@@ -16,7 +17,7 @@
     
     
 </head>
-<body class="rustdoc">
+<body class="rustdoc mod">
     <!--[if lte IE 8]>
     <div class="warning">
         This old browser is unsupported and will most likely display funky
@@ -28,7 +29,7 @@
 
     <nav class="sidebar">
         
-        <p class='location'></p><script>window.sidebarCurrent = {name: 'result', ty: 'mod', relpath: '../'};</script>
+        <p class='location'>Crate result</p><div class="block items"><ul><li><a href="#reexports">Reexports</a></li><li><a href="#modules">Modules</a></li><li><a href="#traits">Traits</a></li></ul></div><p class='location'></p><script>window.sidebarCurrent = {name: 'result', ty: 'mod', relpath: '../'};</script>
     </nav>
 
     <nav class="sub">
@@ -42,19 +43,40 @@
         </form>
     </nav>
 
-    <section id='main' class="content mod">
-<h1 class='fqn'><span class='in-band'>Crate <a class='mod' href=''>result</a></span><span class='out-of-band'><span id='render-detail'>
+    <section id='main' class="content">
+<h1 class='fqn'><span class='in-band'>Crate <a class="mod" href=''>result</a></span><span class='out-of-band'><span id='render-detail'>
                    <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
                        [<span class='inner'>&#x2212;</span>]
                    </a>
-               </span><a id='src-0' class='srclink' href='../src/result/src/lib.rs.html#2-55' title='goto source code'>[src]</a></span></h1>
-<div class='docblock'><p>Helpers for dealing with <code>Result</code> and <code>Option</code> types.</p>
-</div><h2 id='traits' class='section-header'><a href="#traits">Traits</a></h2>
+               </span><a class='srclink' href='../src/result/lib.rs.html#1-92' title='goto source code'>[src]</a></span></h1>
+<div class='docblock'><p>Helpers for dealing with nested <code>Result</code> and <code>Option</code> types. Convert a
+<code>Option&lt;Result&lt;T, E&gt;&gt;</code> to <code>Result&lt;Option&lt;T&gt;, E&gt;</code> and vice versa.</p>
+
+<p><code>use result::prelude::*</code> is recommended in order to import the extension
+traits into scope.</p>
+</div><h2 id='reexports' class='section-header'><a href="#reexports">Reexports</a></h2>
+<table><tr><td><code>pub use <a class="trait" href="../result/trait.ResultOptionExt.html" title="trait result::ResultOptionExt">ResultOptionExt</a> as OptionResultExt;</code></td></tr></table><h2 id='modules' class='section-header'><a href="#modules">Modules</a></h2>
 <table>
                        <tr class=' module-item'>
-                           <td><a class='trait' href='trait.OptionResultExt.html'
-                                  title='result::OptionResultExt'>OptionResultExt</a></td>
-                           <td class='docblock short'>
+                           <td><a class="mod" href="prelude/index.html"
+                                  title='mod result::prelude'>prelude</a></td>
+                           <td class='docblock-short'>
+                                <p>Module that contains all extension traits useful for working with nested
+<code>Option</code> and <code>Result</code> types.</p>
+                           </td>
+                       </tr></table><h2 id='traits' class='section-header'><a href="#traits">Traits</a></h2>
+<table>
+                       <tr class=' module-item'>
+                           <td><a class="trait" href="trait.ResultIteratorExt.html"
+                                  title='trait result::ResultIteratorExt'>ResultIteratorExt</a></td>
+                           <td class='docblock-short'>
+                                <p>Extension trait for iterators that produce <code>Result</code> types</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="trait" href="trait.ResultOptionExt.html"
+                                  title='trait result::ResultOptionExt'>ResultOptionExt</a></td>
+                           <td class='docblock-short'>
                                 <p>Extension trait for nested <code>Option</code> and <code>Result</code> types.</p>
                            </td>
                        </tr></table></section>
@@ -113,11 +135,8 @@
     <script>
         window.rootPath = "../";
         window.currentCrate = "result";
-        window.playgroundUrl = "";
     </script>
-    <script src="../jquery.js"></script>
     <script src="../main.js"></script>
-    
     <script defer src="../search-index.js"></script>
 </body>
 </html>
