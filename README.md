@@ -2,7 +2,10 @@
 
 [![travis-badge][]][travis] [![release-badge][]][cargo] [![docs-badge][]][docs] [![license-badge][]][license]
 
-`result` provides helpers for dealing with `Result` types.
+`result` provides helpers for dealing with nested `Result` types.
+
+`result` provides helpers for dealing with nested `Result` and `Option` types.
+Convert an `Option<Result<T, E>>` to `Result<Option<T>, E>` and vice versa.
 
 ## [Documentation][docs]
 
