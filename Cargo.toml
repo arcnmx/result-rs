@@ -1,12 +1,16 @@
 [package]
 name = "result"
-version = "0.0.1"
+version = "1.0.0"
 authors = ["arcnmx"]
 
-description = "Helpers for dealing with Result types"
+description = "Helpers for dealing with nested Result and Option types"
 keywords = ["option", "result", "invert"]
 
 documentation = "http://arcnmx.github.io/result-rs/result"
 repository = "https://github.com/arcnmx/result-rs"
 readme = "README.md"
 license = "MIT"
+
+[badges]
+travis-ci = { repository = "arcnmx/result-rs" }
+maintenance = { status = "passively-maintained" }
