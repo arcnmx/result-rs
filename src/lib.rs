@@ -1,4 +1,4 @@
-//#![deny(missing_docs)]
+#![deny(missing_docs)]
 #![doc(html_root_url = "http://arcnmx.github.io/result-rs/")]
 
 //! Helpers for dealing with `Result` and `Option` types.
